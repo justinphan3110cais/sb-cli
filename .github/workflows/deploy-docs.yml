@@ -3,6 +3,10 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yaml'
+      - '.github/workflows/deploy-docs.yml'
 
 permissions:
   contents: write
@@ -21,7 +25,7 @@ jobs:
         run: |
           pip install mkdocs-material
           pip install pillow cairosvg  # for social cards
-          # Add any other dependencies your docs need
+          pip install mkdocs-glightbox  # for your glightbox plugin
           
       - name: Deploy docs
         run: mkdocs gh-deploy --force 
