@@ -117,3 +117,16 @@ Or as a list:
     }
 ]
 ```
+
+## Submitting to the Multimodal Leaderboard
+
+To submit your system to the [SWE-bench Multimodal](https://www.swebench.com/multimodal) leaderboard:
+
+1. Submit your predictions for the `swe-bench-m` / `test` split using the CLI
+2. Fork the [experiments repository](https://github.com/swe-bench/experiments)
+3. Add your submission files under `experiments/multimodal/YOUR_MODEL_NAME/`
+4. Create a PR with your submission
+
+See the detailed guide in our [submission documentation](https://swe-bench.com/sb-cli/submit-to-leaderboard).
+
+Note: Check your test split quota using `sb-cli quota swe-bench-m test` before submitting.
