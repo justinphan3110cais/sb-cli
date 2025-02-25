@@ -6,6 +6,7 @@
 
 SWE-bench CLI is a command-line tool for interacting with the SWE-bench API. This tool allows you to:
 
+- Submit to the [SWE-bench Multimodal](https://www.swebench.com/multimodal) leaderboard
 - Submit model predictions for evaluation
 - Retrieve evaluation reports
 - Manage your evaluation runs
@@ -25,3 +26,4 @@ All on the cloud!
 - [Authentication](authentication.md): Set up your API key
 - [Quick Start](quick-start.md): Submit your first predictions
 - [User Guide](user-guide/index.md): Detailed guide on using the CLI
+- [Submit to Leaderboard](submit-to-leaderboard.md): Submit your results to the SWE-bench Multimodal leaderboard

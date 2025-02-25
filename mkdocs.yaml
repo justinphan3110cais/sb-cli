@@ -46,6 +46,7 @@ nav:
     - "Installation": installation.md
     - "Authentication": authentication.md
     - "Quick Start": quick-start.md
+    - "Submit to Leaderboard": submit-to-leaderboard.md
   - User Guide:
     - Overview: user-guide/index.md
     - Get Quotas: user-guide/get-quotas.md
