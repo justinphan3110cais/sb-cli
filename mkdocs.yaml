@@ -39,7 +39,9 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-
+repo_url: https://github.com/swe-bench/sb-cli
+repo_name: SWE-bench/sb-cli
+edit_uri: edit/main/docs
 nav:
   - "Getting Started":
     - index.md
@@ -80,3 +82,7 @@ plugins:
 
 extra_css:
   - css/custom.css
+extra:
+  analytics:
+    provider: google
+    property: G-T5P2NYGJYR
