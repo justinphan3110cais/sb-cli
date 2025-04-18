@@ -127,7 +127,8 @@ def run_progress_task(
 def submit_predictions_with_progress(
     predictions: list[dict], 
     headers: dict, 
-    payload_base: dict, 
+    payload_base: dict,
+    console: Console,
 ) -> tuple[list[str], list[str]]:
     """Submit predictions with a progress bar and return new and completed IDs."""
     def task_func(progress, task):
@@ -150,7 +151,7 @@ def submit_predictions_with_progress(
                     # Retrieve the prediction associated with the failed future
                     pred = future_to_prediction[future]
                     failed_ids.append(pred['instance_id'])
-                    raise RuntimeError(f"Error submitting prediction for instance {pred['instance_id']}: {str(e)}")
+                    console.print(f"[red]Error submitting prediction for instance {pred['instance_id']}: {str(e)}")
                 finally:
                     progress.update(task, advance=1)
         return {
@@ -306,7 +307,7 @@ def submit(
 
     console.print(f"[yellow]  Submitting predictions for {run_id} - ({subset.value} {split})[/]")
     
-    new_ids, all_completed_ids = submit_predictions_with_progress(predictions, headers, payload_base)
+    new_ids, all_completed_ids = submit_predictions_with_progress(predictions, headers, payload_base, console=console)
     all_ids = new_ids + all_completed_ids
 
     run_metadata = {
