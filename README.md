@@ -130,3 +130,16 @@ To submit your system to the [SWE-bench Multimodal](https://www.swebench.com/mul
 See the detailed guide in our [submission documentation](https://swe-bench.com/sb-cli/submit-to-leaderboard).
 
 Note: Check your test split quota using `sb-cli quota swe-bench-m test` before submitting.
+
+## Related projects
+
+<div align="center">
+  <a href="https://github.com/SWE-bench/SWE-bench"><img src="docs/assets/swebench_logo_text_below.svg" alt="SWE-bench" height="120px"></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/SWE-bench/SWE-smith"><img src="docs/assets/swesmith_logo_text_below.svg" alt="SWE-smith" height="120px"></a>
+   &nbsp;&nbsp;
+  <a href="https://github.com/SWE-agent/SWE-agent"><img src="docs/assets/sweagent_logo_text_below.svg" alt="SWE-agent" height="120px"></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/SWE-agent/SWE-ReX"><img src="docs/assets/swerex_logo_text_below.svg" alt="SWE-ReX" height="120px"></a>
+  <!-- <a href="https://github.com/SWE-bench/sb-cli"><img src="docs/assets/sbcli_logo_text_below.svg" alt="sb-cli" height="120px"></a> -->
+</div
