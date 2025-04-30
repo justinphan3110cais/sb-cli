@@ -1,6 +1,7 @@
 site_name: sb-cli
 theme:
   name: material
+  custom_dir: docs/overrides
   logo: assets/icon.svg
   favicon: assets/icon.svg
   icon:
@@ -82,6 +83,7 @@ plugins:
 
 extra_css:
   - css/custom.css
+  - css/bubbles.css
 extra:
   analytics:
     provider: google
