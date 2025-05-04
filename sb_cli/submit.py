@@ -325,7 +325,7 @@ def submit(
     if should_wait_for_evaluation:
         wait_for_evaluation(
             all_ids=all_ids, 
-            timeout=60 * 10,
+            timeout=60 * 30,
             **run_metadata
         )
     if gen_report:

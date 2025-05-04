@@ -28,3 +28,6 @@ def gen_api_key(
     api_key = result['api_key']
     typer.echo(message)
     typer.echo(api_key)
+    typer.echo(f"To save your API key, place the following line in your ~/.bashrc or ~/.zshrc file:")
+    typer.echo(f"export SWEBENCH_API_KEY={api_key}")
+    typer.echo(typer.style("Before using this API key you must verify the code sent to your email, using the 'verify-api-key' command.", fg="red"))
