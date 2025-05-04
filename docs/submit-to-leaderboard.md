@@ -11,9 +11,17 @@ Before submitting, ensure you have:
 
 ## Submission Steps
 
-1. **Submit Predictions to API**
+1. **Check your API Quotas**
 
-First, submit your predictions to the SWE-bench API:
+You can check your quotas using `sb-cli get-quotas`.
+
+If you don't have enough quota for the `swe-bench-m` / `test` split, email the SWE-bench team at `support@swebench.com` and we can increase it for you.
+
+We're currently limiting submissions to `swe-bench-m` / `test` to prevent abuse.
+
+2. **Submit Predictions to API**
+
+Then, submit your predictions to the SWE-bench API:
 
 ```bash
 sb-cli submit swe-bench-m test \
