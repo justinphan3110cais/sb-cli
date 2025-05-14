@@ -1,12 +1,13 @@
 [project]
 name = "sb-cli"
-version = "0.1.4"
+version = "0.1.5"
 description = "Submit predictions to the SWE-bench API and manage your runs"
 authors = [
     { name = "SWE-bench team", email = "support@swebench.com" }
 ]
 dependencies = [
     "typer>=0.9.0",
+    "click<8.2.0",   # see https://github.com/fastapi/typer/discussions/1215
     "requests",
     "rich",
 ]
