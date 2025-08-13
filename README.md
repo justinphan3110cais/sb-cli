@@ -6,7 +6,7 @@
 
 A command-line interface for interacting with the SWE-bench API. Use this tool to submit predictions, manage runs, and retrieve evaluation reports.
 
-Read the full documentation [here](https://swe-bench.com/sb-cli). For submission guidelines, see [here](https://swe-bench.com/sb-cli/submit-to-leaderboard).
+Read the full documentation [here](https://www.swebench.com/sb-cli/). For submission guidelines, see [here](https://swebench.com/sb-cli/submit-to-leaderboard).
 
 ## Installation
 
