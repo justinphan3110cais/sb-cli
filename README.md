@@ -39,9 +39,10 @@ sb-cli verify-api-key YOUR_VERIFICATION_CODE
 SWE-bench has different subsets and splits available:
 
 ### Subsets
-- `swe-bench-m`: The main dataset
-- `swe-bench_lite`: A smaller subset for testing and development
+- `swe-bench-m`: The SWE-bench Multimodal dataset
 - `swe-bench_verified`: 500 verified problems from SWE-bench [Learn more](https://openai.com/index/introducing-swe-bench-verified/)
+- `swe-bench_lite`: A subset of the original SWE-bench for testing
+
 
 ### Splits
 - `dev`: Development/validation split
